@@ -85,37 +85,48 @@ for player in inexperiencedPlayers {
     
 }
 
-// Printing letters to guardians.
+
+
+
+
+
+
+// Printing letters to parents/guardians.
 
 for player in teamSharks {
     
-    if let guardian = players[player] {
+    if let players = players[player] {
         
-        letters.append("Hello \(guardian.guardian), your child \(player) has been placed on team sharks! Congradulations! His/her first practice will be on March 17, 3pm")
+        letters.append("Hello \(players.guardian), your child \(player) has been placed on team sharks! Congradulations! His/her first practice will be on March 17, 3pm.")
         
     }
 }
 
 for player in teamDragons {
     
-    if let guardian = players[player] {
+    if let players = players[player] {
         
-        letters.append("Hello \(guardian.guardian), your child \(player) has been placed on team dragons! Congradulations! His/her first practice will be on March 17, 1pm")
+        letters.append("Hello \(players.guardian), your child \(player) has been placed on team dragons! Congradulations! His/her first practice will be on March 17, 1pm.")
         
     }
 }
 
 for player in teamRaptors {
     
-    if let guardian = players[player] {
+    if let players = players[player] {
         
-        letters.append("Hello \(guardian.guardian), your child \(player) has been placed on team raptors! Congradulations! His/her first practice will be on March 18, 1pm")
+        letters.append("Hello \(players.guardian), your child \(player) has been placed on team raptors! Congradulations! His/her first practice will be on March 18, 1pm.")
         
     }
 }
 
 
-print(letters)
+//Final print-out to console
+for letter in letters {
+    
+    print(letter)
+    
+}
 
 
 
